@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [proof - GITHUB](https://github.com/Samjolas/proof)
-- Live Site URL: [proof - LIVE](https://samjolas.github.io/proof)
+- Live Site URL: [proof - LIVE](https://Samjolas.github.io/proof)
 
 ## My process
 - Evaluate the design 
@@ -52,11 +52,12 @@ Users should be able to:
 - Semantic HTML5 markup
 - BEM METHODOLOGY
 - CSS (SASS)
+- Flexbox
 - CSS GRID
 - Responsive Design
 
 ### What I learned
-
+ - This project was really interesting, I learned how to use grid column
 
 
 ### Continued development
