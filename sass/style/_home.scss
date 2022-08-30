@@ -1,6 +1,89 @@
 @use 'variables' as a;
 
 .preview {
-  max-width: 80%;
+  max-width: calc(100% - 4rem);
+  width: 120rem;
   margin: 1.5rem;
+  gap: 4rem;
 }
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  max-width: 41rem;
+  gap: 2rem;
+  &__details {
+    color: a.$color-accent;
+    font-size: a.$fs-main;
+    font-weight: a.$fw-900;
+    text-transform: lowercase;
+  }
+  &__content {
+    font-size: a.$fs-sub;
+    line-height: 1.5;
+    font-weight: a.$fw-500;
+  }
+}
+
+.rating {
+  display: grid;
+  gap: 2rem;
+  &__box {
+    background: a.$color-bg-card;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 3rem;
+    border-radius: 1rem;
+    max-width: 41rem;
+  }
+  &__star {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  &__by {
+    font-size: 1.5rem;
+    font-weight: a.$fw-700;
+    color: a.$color-accent;
+  }
+}
+
+.testimonial {
+  display: flex;
+  position: relative;
+  gap: 3rem;
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    padding: 3.5rem;
+    align-items: center;
+    gap: 2rem;
+    background: a.$color-accent;
+    max-height: 22rem;
+  }
+  &__img {
+    border-radius: 50%;
+    width: 3rem;
+  }
+  &__name {
+    display: flex;
+    flex-direction: column;
+    font-size: a.$fs-sub;
+    font-weight: a.$fw-500;
+    color: a.$color-bg;
+  }
+  &__des {
+    color: a.$color-main;
+  }
+  &__content {
+    color: a.$color-bg-card;
+    font-size: a.$fs-sub;
+    font-weight: a.$fw-500;
+    line-height: 1.5;
+  }
+}
+
+

@@ -3,7 +3,21 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  .grid__column2 {
+  &__column2 {
     grid-column: 1 / span 2;
+  }
+}
+
+.ml {
+  margin-left: a.$m-5;
+  &__2 {
+    margin-left: calc(2 * a.$m-5);
+  }
+}
+
+.mt {
+  margin-top: calc(a.$m-5 / 2);
+  &__2 {
+    margin-top: a.$m-5;
   }
 }
